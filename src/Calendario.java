@@ -155,13 +155,4 @@ public class Calendario{
                 return 0; // Mes inválido
         }
     }
-
-    public static void main(String[] args) {
-        
-        Calendario calendario = new Calendario();
-        calendario.generaCalendario(11, 2004); 
-        System.out.println(calendario.getRepresentacionMes());
-        int dia = calendario.obtenerPrimerDiaDelMes(11, 2004);
-        System.out.println("El primer día del mes es: " + dia);
-    }
 }
