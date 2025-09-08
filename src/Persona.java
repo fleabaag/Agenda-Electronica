@@ -9,17 +9,46 @@ public class Persona{
     private String telefono;
     private String movil;
     private String correo_Electronico;
+    private String URL;
+    private String Facebook;
+    private String Instagram;
+    private List<Cita> citas;
 
 
-    //URL, IG, Fck
-
-    public Persona(String apellido_materno, String apellido_Paterno, String direcciones, String telefono, String movil, String correo_Electronico){
-        this.apellido_materno= apellido_materno;
-        this.apellido_materno= apellido_Paterno;
+    //  Constructor con todos los parámetros
+    public Persona(String nombre, String apellido_materno, String apellido_Paterno, String direcciones, String telefono, String movil, String correo_Electronico, String URL, String Facebook, String Instagram, List<Cita> citas){
+        this.nombre = nombre;
+        this.apellido_materno = apellido_materno;
+        this.apellido_Paterno = apellido_Paterno;
         this.direcciones = direcciones;
-        this.telefono= telefono;
-        this.movil= movil;
-        this.correo_Electronico=correo_Electronico;
+        this.telefono = telefono;
+        this.movil = movil;
+        this.correo_Electronico = correo_Electronico;
+        this.URL = URL;
+        this.Facebook = Facebook;   
+        this.Instagram = Instagram;
+        this.citas = citas;
+    }
+
+    //  Constructor por defecto
+    public Persona(){
+        this.nombre = "";
+        this.apellido_materno = "";
+        this.apellido_Paterno = "";
+        this.direcciones = "";
+        this.telefono = "";
+        this.movil = "";
+        this.correo_Electronico = "";
+        this.URL = "";
+        this.Facebook = "";   
+        this.Instagram = "";
+        this.citas = null;
+    }
+
+    //Getters y setters
+
+    public String getnombre(){
+        return this.nombre;
     }
 
     public String getapellido_materno(){
@@ -46,6 +75,20 @@ public class Persona{
         return this.correo_Electronico;
     }
 
+    public String getURL(){
+        return this.URL;
+    }
+    public String getFacebook(){
+        return this.Facebook;
+    }
+
+    public String getInstagram(){
+        return this.Instagram;
+    }
+
+    public List<Cita> getCitas(){
+        return this.citas;
+    }
     public void setapellido_materno( String apellido_materno){
         this.apellido_materno= apellido_materno;
     }
@@ -63,17 +106,27 @@ public class Persona{
     }
 
     public void setmovil(String movil){
-        this.telefono= telefono;
+        this.movil = movil;
     }
 
     public void setcorreoElectronico(String correo_Electronico){
         this.correo_Electronico= correo_Electronico;
     }
 
+    public void setURL(String URL){
+        this.URL= URL;
+    }
 
+    public void setFacebook(String Facebook){
+        this.Facebook= Facebook;
+    }
+    
+    public void setInstagram(String Instagram){
+        this.Instagram= Instagram;
+    }
 
-
-
-
+    public void setCitas(List<Cita> citas){
+        this.citas= citas;
+    }
 
 }
