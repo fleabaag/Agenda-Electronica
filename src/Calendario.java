@@ -1,10 +1,8 @@
 public class Calendario{
-
     
     // Atributos
     private int anho;
     private int mes;
-    private int dia;
     private String representacionMes;
     private final String[] meses = {
         "Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
@@ -19,7 +17,6 @@ public class Calendario{
     public Calendario(int anho, int mes, int dia, String representacionMes){
         this.anho = anho;
         this.mes = mes;
-        this.dia = dia;
         this.representacionMes = representacionMes;
     }
 
@@ -29,7 +26,6 @@ public class Calendario{
     public Calendario(){
         this.anho = 0;
         this.mes = 0;
-        this.dia = 0;
         this.representacionMes = "";
     }
 
@@ -43,11 +39,7 @@ public class Calendario{
         return this.mes;
     }
 
-    public int getDia(){
-        return this.dia;
-    }
-
-    public String getRepresentacionMes(){
+        public String getRepresentacionMes(){
         return this.representacionMes;
     }
 
@@ -58,11 +50,7 @@ public class Calendario{
     public void setMes(int mes){
         this.mes = mes;
     }
-    
-    public void setDia(int dia){
-        this.dia = dia;
-    }
-       
+           
     public void setRepresentacionMes(String representacionMes){
         this.representacionMes = representacionMes;
     }
@@ -102,6 +90,7 @@ public class Calendario{
                 representacion += "\n";
             }
         }
+        representacion += "\n";
         this.representacionMes = representacion;
     }
 
