@@ -77,7 +77,7 @@ public class Empleo extends Persona {
         System.out.println("Desea agregar una cita? (s/n): ");
         String respuesta = scanner.nextLine();
         if (respuesta.equalsIgnoreCase("s")) {
-            Cita nuevaCita = new Cita().anhadirCita();
+            Cita nuevaCita = new Cita().anhadirCita(scanner);
             if (nuevaCita != null) {
 
                 List<Cita> calendario = libroDirecciones.getCitas();
