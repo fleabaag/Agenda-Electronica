@@ -86,8 +86,7 @@ public class Cita implements java.io.Serializable{
         return output;
     }
 
-    public Cita anhadirCita(){
-        Scanner scanner = new Scanner(System.in);
+    public Cita anhadirCita(Scanner scanner){
         System.out.print("Ingrese el título de la cita: ");
         String titulo = scanner.nextLine();
 
