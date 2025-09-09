@@ -200,6 +200,12 @@ public class Persona implements java.io.Serializable{
         System.out.print("Ingrese el Facebook: ");
         String Facebook = scanner.nextLine();
 
+        // Se revisa formato de Facebook que empiece con "fb.com/"
+        while (!Facebook.matches("^fb.com/.*$")) {
+            System.out.print("Facebook inválido. Ingrese el Facebook (debe comenzar con fb.com/): ");
+            Facebook = scanner.nextLine();
+        }
+
         System.out.print("Ingrese el Instagram: ");
         String Instagram = scanner.nextLine();
 

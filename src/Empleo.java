@@ -67,7 +67,7 @@ public class Empleo extends Persona {
         agregarCita(libroDirecciones, nombre, scanner);
         agregarNota(libroDirecciones, nombre, scanner);
         System.out.println("... Registro de persona añadido exitosamente ...");
-
+        System.out.println("Presione Enter para continuar...");
 
         // scanner.close();
     }
@@ -119,7 +119,7 @@ public class Empleo extends Persona {
 
         if (respuestaNota.equalsIgnoreCase("s")) {
             Nota nuevaNota = new Nota();
-            nuevaNota.anhadirNota();
+            nuevaNota.anhadirNota(scanner);
             getNotas().add(nuevaNota);
             libroDirecciones.anhadirNota(nuevaNota);
             try {

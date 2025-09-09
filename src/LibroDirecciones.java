@@ -91,7 +91,7 @@ public class LibroDirecciones implements java.io.Serializable{
         for(Empleo emp : this.getEmpleados()){
 
             String nombreCompletoEmpleado = emp.getNombre() + " " + emp.getApellido_Paterno() + " " + emp.getApellido_Materno();
-            System.out.println("Sí buscando: '" + nombreCompleto + "' contra '" + nombreCompletoEmpleado + "'");
+            // System.out.println("Sí buscando: '" + nombreCompleto + "' contra '" + nombreCompletoEmpleado + "'");
             if(nombreCompletoEmpleado.equalsIgnoreCase(nombreCompleto)){
                 return emp;
             }
@@ -110,7 +110,7 @@ public class LibroDirecciones implements java.io.Serializable{
         for(Empleo emp : this.getEmpleados()){
 
             String nombreCompletoEmpleado = emp.getNombre() + " " + emp.getApellido_Paterno() + " " + emp.getApellido_Materno();
-            System.out.println("Sí buscando: '" + nombreCompleto + "' contra '" + nombreCompletoEmpleado + "'");
+            // System.out.println("Sí buscando: '" + nombreCompleto + "' contra '" + nombreCompletoEmpleado + "'");
             if(nombreCompletoEmpleado.equalsIgnoreCase(nombreCompleto)){
                 empleadoAEliminar = emp;
                 break;

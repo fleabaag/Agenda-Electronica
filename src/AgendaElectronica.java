@@ -47,6 +47,8 @@ public class AgendaElectronica{
                     } else {
                         System.out.println("Empleado encontrado con el nombre " + nombreCompleto + ":");
                         System.out.println(resultados.toString());
+                        System.out.println("Presione Enter para continuar...");
+
                     }
                     System.out.println();
                     scanner.nextLine(); // Limpiar el buffer
@@ -62,9 +64,9 @@ public class AgendaElectronica{
                         System.out.println("Empleado encontrado con el nombre " + nombreCompletoModificar + ":");
                         System.out.println(empleadoAModificar.toString() + "\n");
 
-                        System.out.println("¿Qué deseas modificar: ?" + 
-                                            "1. Datos Personales" +
-                                            "2. Insertar/Borrar citas" +
+                        System.out.println("¿Qué deseas modificar?: \n" + 
+                                            "1. Datos Personales\n" +
+                                            "2. Insertar/Borrar citas\n" +
                                             "3. Insertar/Borrar notas");
 
                         String opcionModificar = scanner.nextLine();
@@ -159,6 +161,7 @@ public class AgendaElectronica{
                         try {
                             GestorDeDatos.guardarLibroDirecciones(libroDirecciones);
                             System.out.println("... Los cambios se han guardado correctamente ...");
+                            System.out.println("Presione Enter para continuar...");
                         } catch (Exception e) {
                             System.out.println("Error al guardar los cambios: " + e.getMessage());
                         }

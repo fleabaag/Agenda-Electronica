@@ -38,8 +38,7 @@ public class Nota implements java.io.Serializable{
         this.titulo = titulo;
     }
 
-    public void anhadirNota(){
-        Scanner scanner = new Scanner(System.in);
+    public void anhadirNota(Scanner scanner){
         System.out.print("Ingrese el título de la nota: ");
         String titulo = scanner.nextLine();
         System.out.print("Ingrese la nota: ");
@@ -47,7 +46,7 @@ public class Nota implements java.io.Serializable{
         setTitulo(titulo);
         setNota(nota);
         System.out.println("... Nota añadida exitosamente ...");
-        scanner.close();
+        // scanner.close();
     }
 
     @Override
